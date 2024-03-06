@@ -89,5 +89,8 @@ inoremap <expr> <CR> pumvisible() ? '<C-y>' : '<CR>'
 " <Tab> triggers Omni completion (<C-x><C-o>) in a coding context
 let g:SuperTabDefaultCompletionType = "context"
 
+:autocmd InsertEnter * set cursorline
+:autocmd InsertLeave * set nocursorline
+
 " The line beneath this is called `modeline`. See `:help modeline`
 " vim: ts=2 sts=2 sw=2 et
